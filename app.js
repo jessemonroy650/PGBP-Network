@@ -35,7 +35,7 @@ var app = {
     },
     pluginTest : function() {
         document.getElementById('button').addEventListener('click', function() {
-            getIPAddress(
+            networkinterface.getIPAddress(
                function (d) { app.showIt('content', 'IP is:' + d); },
                function (e) { app.showIt('info', 'error' + e); }
             );
