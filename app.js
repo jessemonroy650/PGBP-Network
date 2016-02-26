@@ -38,6 +38,7 @@ var app = {
             getIPAddress(
                function (d) { app.showIt('content', 'IP is:' + d); },
                function (e) { app.showIt('info', 'error' + e); }
+            );
         });
     }
 };
